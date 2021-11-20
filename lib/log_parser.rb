@@ -10,7 +10,7 @@ class LogParser
     end
 
     file = File.open(ARGV[0])
-    file_data = file.readlines.map
+    file_data = file.readlines
     file.close
 
     file_data_valid = extract_data_from_file(file_data)
